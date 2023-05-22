@@ -1,6 +1,6 @@
 # flask_blog
 blog dans le framework python flask
-
+<code>
 monprojet/
     ├── static/
     │   ├── style.css
@@ -12,3 +12,4 @@ monprojet/
     │   └── test_views.py
     ├── views.py
     └── run.py
+</code>
