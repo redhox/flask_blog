@@ -19,5 +19,5 @@ avec python et pip
     python3 -m venv python_venv
     source python_venv/bin/activate
     pip install flask mysql-connector-python jinja
-       
+treation de l'arboresance
     mkdir static && mkdir templates && mkdir tests
