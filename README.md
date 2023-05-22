@@ -12,4 +12,12 @@ blog dans le framework python flask
         │   └── test_views.py
         ├── views.py
         └── run.py
-
+        
+        
+avec python et pip
+        
+    python3 -m venv python_venv
+    source python_venv/bin/activate
+    pip install flask mysql-connector-python jinja
+       
+    mkdir static && mkdir templates && mkdir tests
