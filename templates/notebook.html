@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<main class="notebook-main">
+<section class="selection">
+    <h1>{% block title %}notebook {% endblock %}</h1>
+
+        {% for element in template_pages: %}
+            <a href="#" ><div id="{{element.strip('.html')}}boutton">{{element.strip(".html")}}</div></a>
+        {% endfor %}
+</section>
+<section class="affichage-notebook">
+    
+    {% for element in template_pages: %}
+        <div id= "{{element.strip(".html")}}">{% include 'notebooks/' ~ element %}</div>
+    {% endfor %}
+</section>
+</main>
+<script>
+    var nb='index';
+    {% for element in template_pages: %}
+    
+    document.getElementById("{{element.strip('.html')}}boutton").addEventListener("click", function() {
+        document.getElementById(nb).style.display = "none";
+        document.getElementById("{{element.strip('.html')}}").style.display = "block";
+        document.getElementById("{{element.strip('.html')}}boutton").style.backgroundColor = "gray";
+        document.getElementById(nb+"boutton").style.backgroundColor = "";
+        nb="{{element.strip('.html')}}";
+    });
+    {% endfor %}
+</script>
+
+{% endblock %}

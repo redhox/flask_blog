@@ -1,0 +1,4 @@
+.venv/
+.env
+templates/notebooks/*
+!templates/notebooks/index.html
