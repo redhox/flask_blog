@@ -9,6 +9,9 @@ body{
     padding: 0px !important;
 }
 header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: #33343d;
     box-shadow: black 5px 5px 5px;
     height: 4vh;
@@ -55,14 +58,22 @@ nav > a:hover{
 .selection{
     width: 20%;
     min-width: 300px;
+    min-height:96vh ;
     background-color: rgb(68, 68, 68);
+}
+.selection > div {
+    position: sticky;
+    top: 4.5vh;
+    z-index: 99;
 }
 .affichage-notebook{
 overflow-y: hidden;
 padding-left: 30px;
+
 }
 .affichage-notebook > div{
     display: none;
+
 }
 #index{
     display: block;

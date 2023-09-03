@@ -3,11 +3,13 @@
 {% block content %}
 <main class="notebook-main">
 <section class="selection">
-    <h1>{% block title %}notebook {% endblock %}</h1>
-
+    <div>
+        <h1>{% block title %}notebook {% endblock %}</h1>
+    
         {% for element in template_pages: %}
             <a href="#" ><div id="{{element.strip('.html')}}boutton">{{element.strip(".html")}}</div></a>
         {% endfor %}
+    </div>
 </section>
 <section class="affichage-notebook">
     
